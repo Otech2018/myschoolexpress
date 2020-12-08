@@ -13,9 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [App\Http\Controllers\FrontPagesController::class, 'index'])->name('homepage');
+Route::get('/about_us', [App\Http\Controllers\FrontPagesController::class, 'about_us'])->name('about_us');
+Route::get('/contact_us', [App\Http\Controllers\FrontPagesController::class, 'contact_us'])->name('contact_us');
+	
 
 Auth::routes();
 

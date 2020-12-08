@@ -15,6 +15,10 @@ return [
 
     'name' => env('APP_NAME', 'Laravel'),
 
+    // 'address' => env('APP_ADDRESS', 'Laravel'),
+    // 'phone' => env('APP_PHONE', 'Laravel'),
+    // 'email' => env('APP_EMAIL', 'Laravel'),
+
     /*
     |--------------------------------------------------------------------------
     | Application Environment
